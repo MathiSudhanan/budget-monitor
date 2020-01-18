@@ -6,7 +6,7 @@ import Login from './components/Logon/login'
 
 function App() {
   return (
-    <div className="backgroundImage">
+    <div className="background-image">
       <Login />
     </div>
   )

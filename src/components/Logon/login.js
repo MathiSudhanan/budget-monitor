@@ -3,7 +3,14 @@
 import React from 'react'
 import './login.css'
 
-function Login() {
+const state = {
+  login: '',
+  password: '',
+}
+
+Login.propTypes = {}
+
+function Login(props) {
   return (
     <div className="logon-container">
       <div className="logon-container-item">
@@ -12,10 +19,10 @@ function Login() {
         </div>
         <div className="logon-container-item-content">
           <div>
-            <input type="text" placeholder="Login Name / Email"></input>
+  <input type="text" placeholder="Login Name / Email">{props.}</input>
           </div>
           <div>
-            <input type="text" placeholder="Password"></input>
+            <input type="text" placeholder="Password" type="password"></input>
           </div>
         </div>
         <div className="logon-container-item-footer">
