@@ -39,7 +39,7 @@
   float: left;
   border: 0.5mm groove lightseagreen;
   width: 99%;
-  box-shadow: 10px 10px 5px lightslategray;
+  box-shadow: /*10px 10px 5px lightslategray;*/ 3px 3px red, -1em 0 0.4em olive;
   border-radius: 15px;
   margin-top: 10px;
 }

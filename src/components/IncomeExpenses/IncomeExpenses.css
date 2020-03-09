@@ -5,7 +5,7 @@
   width: 47.2%;
   text-align: center;
   /* border: 1px solid lightgray; */
-  /* border: 0.5mm groove lightgreen;  */
+  border: 0.5mm groove lightgreen;
   box-shadow: 10px 10px 5px lightslategray;
   border-radius: 15px;
   margin-top: 10px;
@@ -17,7 +17,7 @@
   width: 47.2%;
   text-align: center;
   /* border: 1px solid lightgray; */
-  /* border: 0.5mm groove lightcoral; */
+  border: 0.5mm groove lightcoral;
 
   box-shadow: 10px 10px 5px lightslategray;
   border-radius: 15px;

@@ -9,7 +9,7 @@ export const TransactionsGrid = ({isShow}) => {
   const {transactions} = useContext(GlobalContext)
 
   return isShow ? (
-    <div className="collapsible-item">
+    <div className="row collapsible-item">
       <h4 className="text">Transaction List</h4>
       <table className="table">
         <thead>
