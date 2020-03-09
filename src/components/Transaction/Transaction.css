@@ -1,0 +1,149 @@
+/** @format */
+
+.transaction-btn {
+  width: 15%;
+  border-radius: 15px;
+  height: 2em;
+  margin: 5px 5px 5px 5px;
+}
+
+.label {
+  margin: 5px 5px 5px 5px;
+  text-align: right;
+  width: 40%;
+  float: left;
+  padding: 5px 2px;
+}
+.transaction-text {
+  width: auto;
+  border-radius: 15px;
+  height: 1.5em;
+  padding: 0px 5px;
+  font-size: medium;
+}
+.text {
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+}
+.text1 {
+  margin: 5px 1px 5px 5px;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+.row {
+  float: left;
+  border: 0.5mm groove lightseagreen;
+  width: 99%;
+  box-shadow: 10px 10px 5px lightslategray;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.row1 {
+  float: left;
+  border: 0.5mm groove mediumseagreen;
+  width: 99%;
+  box-shadow: 10px 10px 5px lightslategray;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.inner-row {
+  padding: 5px 0px;
+}
+
+.transaction-select {
+  border-radius: 15px;
+  margin: 5px 5px 5px 5px;
+  height: 2em;
+}
+table {
+  margin-left: 2%;
+  width: 95%;
+  padding-bottom: 10px;
+  /* border: rgb(71, 112, 153); */
+  /* border-style: outset; */
+}
+
+th {
+  height: 50px;
+  width: 20%;
+}
+.table-row-head {
+  border-radius: 15px;
+  /* background-color: teal; */
+  background-color: rgb(39, 82, 82);
+  color: #f2f2f2;
+}
+
+/* tr:hover {
+  background-color: darkseagreen;
+} */
+tr:nth-child(even) {
+  background-color: rgba(155, 235, 235, 0.644);
+}
+/* tr:nth-child(odd) {
+  background-color: rgba(155, 235, 235, 0.445);
+} */
+
+.td-left {
+  text-align: left;
+}
+
+.td-center {
+  text-align: center;
+}
+
+.td-right {
+  text-align: right;
+}
+
+.collapsible {
+  float: left;
+  width: 98%;
+  border-radius: 15px;
+  border-style: outset;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgb(39, 82, 82);
+  color: #f2f2f2;
+  margin-top: 10px;
+  box-shadow: 10px 10px 5px lightslategray;
+}
+
+.collapsible-item {
+  width: 98%;
+
+  float: left;
+  padding: 10px 0px;
+  /* background-color: aqua; 
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-out;*/
+
+  max-height: 100vh;
+
+  overflow: hidden;
+  /* transition: max-height 0.25s ease-in-out; */
+  transition: all 2s ease-out;
+
+  /* transform: rotate(90deg) translateX(-3px); */
+
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px lightslategray;
+}
+
+.btn-delete {
+  background-color: red;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+}
+
+.rs-span {
+  float: left;
+  text-align: left;
+}

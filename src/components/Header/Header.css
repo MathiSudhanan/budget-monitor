@@ -1,0 +1,12 @@
+/** @format */
+
+.center {
+  text-align: center;
+  /* border: 1px solid green; */
+  border: .5mm groove gold; /*rgba(170, 50, 220, 0.6);*/
+
+  padding: 10px;
+  outline-offset: 15px;
+  box-shadow: 10px 10px 5px lightslategray;
+  border-radius: 15px;
+}

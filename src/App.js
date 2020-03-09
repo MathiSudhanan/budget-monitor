@@ -2,22 +2,23 @@
 
 import React from 'react'
 import './App.css'
-import Login from './components/Logon/login'
+import {Header} from './components/Header/Header'
+import {IncomeExpenses} from './components/IncomeExpenses/IncomeExpenses'
+import {AddTransaction} from './components/Transaction/AddTransaction'
+import {TransactionList} from './components/Transaction/TransactionList'
+import {GlobalProvider} from './Context/GlobalContext'
 
 function App() {
   return (
-    <div className="background-image">
-      <Login />
+    <div className="centerScreen">
+      <Header></Header>
+      <GlobalProvider>
+        <IncomeExpenses></IncomeExpenses>
+        <TransactionList></TransactionList>
+        <AddTransaction></AddTransaction>
+      </GlobalProvider>
     </div>
   )
 }
-/*
-      <div className="grid-container-header">
-        <div className="grid-header-item">
-          <h1>
-            <strong> Budget Monitor </strong>
-          </h1>
-        </div>
-      </div>
-      */
+
 export default App
