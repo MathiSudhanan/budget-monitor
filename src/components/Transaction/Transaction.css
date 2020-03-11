@@ -115,23 +115,9 @@ tr:nth-child(even) {
   box-shadow: 10px 10px 5px lightslategray;
 }
 
-.collapsible-item {
+.collapsible-item  {
   width: 98%;
-
   float: left;
-  padding: 10px 0px;
-  /* background-color: aqua; 
-  transform: translateY(-2px);
-  transition: transform 0.2s ease-out;*/
-
-  max-height: 100vh;
-
-  overflow: hidden;
-  /* transition: max-height 0.25s ease-in-out; */
-  transition: all 2s ease-out;
-
-  /* transform: rotate(90deg) translateX(-3px); */
-
   border-radius: 15px;
   box-shadow: 10px 10px 5px lightslategray;
 }
@@ -146,4 +132,23 @@ tr:nth-child(even) {
 .rs-span {
   float: left;
   text-align: left;
+}
+
+/**/
+.my-node-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.my-node-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }
