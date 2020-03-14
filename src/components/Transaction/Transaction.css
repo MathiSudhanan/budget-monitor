@@ -21,7 +21,7 @@
   /* text-decoration: none; */
   align-items: center;
   justify-content: center;
-  line-height: 44px;
+  line-height: 30px;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);

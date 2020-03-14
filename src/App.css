@@ -59,6 +59,37 @@ body {
   border-color: lightskyblue;
 }
 
+.react-datepicker__header {
+  background: linear-gradient(to top right, #41b782, rgb(39, 82, 82));
+  color: #fff;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: rgb(39, 82, 82);
+  /* color: rgb(39, 82, 82); */
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: rgb(39, 82, 82);
+
+  /* border-left-color: rgb(39, 82, 82); */
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range {
+  background: linear-gradient(to top right, #41b782, rgb(39, 82, 82));
+}
+
+.react-datepicker__day:focus {
+  background-color: #41b782;
+}
 /*collapsible*/
 .wrap-collabsible {
   padding-top: 10px;
