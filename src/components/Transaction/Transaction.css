@@ -1,10 +1,38 @@
 /** @format */
 
 .transaction-btn {
-  width: 15%;
+  /* width: 15%;
   border-radius: 15px;
   height: 2em;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px; */
+  /* background: rgb(39, 82, 82); */
+  background: linear-gradient(to top right, #41b782, rgb(39, 82, 82));
+  border-left-color: #028ebb;
+  border-right-color: #028ebb;
+  border-top: 1px solid rgba(3, 143, 188, 0.722);
+  border-bottom: 1px solid rgba(3, 143, 188, 0.722);
+  outline: 0;
+  /* box-shadow: inset 0 9px 21px rgba(19, 183, 166, 0.1), 0 0 2px rgba(60, 196, 180, 0.6); */
+
+  /* display: inline-flex; */
+  margin: 0.25em 0;
+  padding: 0 30px;
+  color: #fff;
+  /* text-decoration: none; */
+  align-items: center;
+  justify-content: center;
+  line-height: 44px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.55s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.transaction-btn:hover {
+  border-color: #028ebb;
+  border-top: 1px solid rgba(3, 143, 188, 0.16);
+  border-bottom: 1px solid rgba(46, 162, 200, 0.29);
 }
 
 .label {
@@ -20,6 +48,11 @@
   height: 1.5em;
   padding: 0px 5px;
   font-size: medium;
+  outline: 0;
+}
+
+.transaction-text:focus {
+  border-color: lightskyblue;
 }
 .text {
   margin: 5px 5px 5px 5px;
@@ -127,6 +160,7 @@ tr:nth-child(even) {
   color: #f2f2f2;
   margin-top: 10px;
   transition: 0.5s ease-out;
+  cursor: pointer;
 }
 
 .collapsible:hover {
