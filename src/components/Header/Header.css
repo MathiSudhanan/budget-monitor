@@ -3,10 +3,15 @@
 .center {
   text-align: center;
   /* border: 1px solid green; */
-  border: 0.5mm groove gold; /*rgba(170, 50, 220, 0.6);*/
+  border: 0.5mm groove gold;
 
-  /* padding: 10px; */
-  outline-offset: 15px;
-  box-shadow: 10px 10px 5px lightslategray;
+  /* padding: 5px; */
+  outline-offset: 10px;
+  /* box-shadow: 10px 10px 5px lightslategray; */
+  /* border-radius: 15px; */
+
+  background: transparent;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2), 0 16px 28px rgba(0, 0, 0, 0.24);
+  /* border: 0px solid transparent; */
   border-radius: 15px;
 }

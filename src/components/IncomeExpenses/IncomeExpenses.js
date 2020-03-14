@@ -14,16 +14,21 @@ export const IncomeExpenses = () => {
     .toFixed(2)
 
   const expense = (amounts.filter(item => item < 0).reduce((acc, item) => (acc += item), 0) * -1).toFixed(2)
+  var date = new Date()
+
+  const fromDate = new Date(date.getFullYear(), date.getMonth(), 0)
+  const toDate = date
+
   return (
     <div>
-      <div className="amount">
+      <div id="amount">
         <h3>Opening Balance: {income.toLocaleString('en-IN', {maximumSignificantDigits: 3})}</h3>
-        Date: 31-Jan-2020
+        <span>Date: {fromDate.toLocaleDateString('en-IN')}</span>
       </div>
-      <div className="balance">
+      <div id="balance">
         <h3>Total Expense: {expense.toLocaleString('en-IN')}</h3>
-        Date: 27-Feb-2020
+        <span>Date: {toDate.toLocaleDateString('en-IN')}</span>
       </div>
-    </div> 
+    </div>
   )
 }

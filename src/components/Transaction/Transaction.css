@@ -39,17 +39,24 @@
   float: left;
   border: 0.5mm groove lightseagreen;
   width: 99%;
-  box-shadow: /*10px 10px 5px lightslategray;*/ 3px 3px red, -1em 0 0.4em olive;
   border-radius: 15px;
   margin-top: 10px;
 }
 .row1 {
   float: left;
-  border: 0.5mm groove mediumseagreen;
   width: 99%;
-  box-shadow: 10px 10px 5px lightslategray;
-  border-radius: 15px;
   margin-top: 10px;
+  border: 0.5mm groove mediumseagreen;
+  border-radius: 15px;
+  /* box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.row1:hover {
+  background: transparent;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2), 0 16px 28px rgba(0, 0, 0, 0.24);
+  border: 0px solid transparent;
+  border-radius: 15px;
+  border: 0px none #ffffff;
 }
 
 .inner-row {
@@ -76,7 +83,9 @@ th {
 .table-row-head {
   border-radius: 15px;
   /* background-color: teal; */
-  background-color: rgb(39, 82, 82);
+  /* background-color: rgb(39, 82, 82); */
+  background: linear-gradient(to top right, #41b782, rgb(39, 82, 82));
+
   color: #f2f2f2;
 }
 
@@ -84,7 +93,11 @@ th {
   background-color: darkseagreen;
 } */
 tr:nth-child(even) {
-  background-color: rgba(155, 235, 235, 0.644);
+  /* background-color: rgba(155, 235, 235, 0.644); */
+  /* background-color: rgba(39, 82, 82, 0.541); */
+  background: linear-gradient(to top right, #41b782, rgba(39, 82, 82, 0.568));
+
+  color: #fff;
 }
 /* tr:nth-child(odd) {
   background-color: rgba(155, 235, 235, 0.445);
@@ -104,22 +117,40 @@ tr:nth-child(even) {
 
 .collapsible {
   float: left;
-  width: 98%;
+  width: 99%;
   border-radius: 15px;
-  border-style: outset;
   text-align: center;
   padding: 10px 0px;
-  background-color: rgb(39, 82, 82);
+  /* background-color: rgb(39, 82, 82); */
+  /* background: linear-gradient(to top right, #41b782, #86d169); */
+  background: linear-gradient(to top right, #41b782, rgb(39, 82, 82));
   color: #f2f2f2;
   margin-top: 10px;
-  box-shadow: 10px 10px 5px lightslategray;
+  transition: 0.5s ease-out;
 }
 
-.collapsible-item  {
-  width: 98%;
+.collapsible:hover {
+  /* box-shadow: 10px 10px 5px lightslategray; */
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2), 0 16px 28px rgba(0, 0, 0, 0.24);
+  border: 0px solid transparent;
+  border-radius: 15px;
+}
+
+.collapsible-item {
+  /* width: 98%;
   float: left;
   border-radius: 15px;
-  box-shadow: 10px 10px 5px lightslategray;
+  box-shadow: 10px 10px 5px lightslategray; */
+  /* background: transparent;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2), 0 16px 28px rgba(0, 0, 0, 0.24); */
+  /* border: 0px solid transparent; */
+  border-radius: 15px;
+}
+
+.collapsible-item:hover {
+  background: transparent;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2), 0 16px 28px rgba(0, 0, 0, 0.24);
+  border: 0px solid transparent;
 }
 
 .btn-delete {
@@ -130,7 +161,7 @@ tr:nth-child(even) {
 }
 
 .rs-span {
-  float: left;
+  float: right;
   text-align: left;
 }
 

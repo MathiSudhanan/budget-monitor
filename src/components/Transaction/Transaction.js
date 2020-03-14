@@ -12,8 +12,12 @@ export const Transaction = ({transaction}) => {
       <td className="td-left">{transaction.text} </td>
 
       <td className="td-right">
-        {transaction.amount > 0 ? <span className="rs-span">₹ </span> : <span className="rs-span">₹ (-)</span>}
-        {Math.abs(transaction.amount).toFixed(2)}
+        <span className="rs-span">{Math.abs(transaction.amount).toFixed(2)}</span>
+        {transaction.amount > 0 ? (
+          <span className="rs-span">&nbsp;&nbsp;&nbsp;₹&nbsp;</span>
+        ) : (
+          <span className="rs-span"> (-)₹&nbsp;</span>
+        )}
       </td>
       <td className="td-center">
         <button className="btn-delete" onClick={() => deleteTransaction(transaction.id)}>

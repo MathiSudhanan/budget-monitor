@@ -14,8 +14,8 @@ function App() {
       <Header></Header>
       <GlobalProvider>
         <IncomeExpenses></IncomeExpenses>
-        <TransactionList></TransactionList>
         <AddTransaction></AddTransaction>
+        <TransactionList></TransactionList>
       </GlobalProvider>
     </div>
   )

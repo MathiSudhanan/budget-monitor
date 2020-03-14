@@ -8,19 +8,22 @@ import 'react-datepicker/dist/react-datepicker.css'
 import './Transaction.css'
 export const AddTransaction = () => {
   const [text, setText] = useState('')
-  const [amount, setAmount] = useState(0)
+  const [amount, setAmount] = useState('')
   const [date, setDate] = useState(new Date())
   const {addTransaction} = useContext(GlobalContext)
   const handleClick = e => {
-    const newTransaction = {
-      id: -Math.floor(Math.random(1 * 1000000) * 10),
-      date,
-      text,
-      amount: +amount,
+    if (text && amount) {
+      const newTransaction = {
+        id: -Math.floor(Math.random(1 * 1000000) * 10),
+        date,
+        text,
+        amount: +amount,
+      }
+      addTransaction(newTransaction)
+      setAmount('')
+      setText('')
+      setDate(new Date())
     }
-    addTransaction(newTransaction)
-    setAmount(0)
-    setText('')
   }
 
   const handleChange = date => {
@@ -32,7 +35,7 @@ export const AddTransaction = () => {
         <div className="label">
           <label>Date:</label>
         </div>
-        <DatePicker selected={date} onChange={handleChange} />
+        <DatePicker selected={date} onChange={handleChange} dateFormat="d/MM/yyyy" />
       </div>
       <div className="inner-row">
         <div className="label">
